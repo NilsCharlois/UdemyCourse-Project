@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loadedTarget = 'recipe';
+
+  onTargetSelected(target: string){
+    this.loadedTarget = target;
+  }
 }
